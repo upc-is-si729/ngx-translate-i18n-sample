@@ -11,6 +11,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { HomeComponent } from './public/pages/home/home.component';
 import { TranslationSampleComponent } from './public/components/translation-sample/translation-sample.component';
+import { LanguageSelectionComponent } from './public/components/language-selection/language-selection.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -21,7 +22,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    TranslationSampleComponent
+    TranslationSampleComponent,
+    LanguageSelectionComponent
   ],
   imports: [
     BrowserModule,
