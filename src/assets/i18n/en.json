@@ -1,0 +1,9 @@
+{
+  "title": {
+    "home": "Sample Translation"
+  },
+  "message": {
+    "hello": "Hello {{name}}!"
+  }
+}
+

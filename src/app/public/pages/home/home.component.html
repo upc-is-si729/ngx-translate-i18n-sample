@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span>NGX Translate Sample App</span>
+  <span class="spacer"></span>
+  <span>
+  <mat-button-toggle-group [value]="currentLang" appearance="standard" aria-label="Preferred Language" name="language">
+    <mat-button-toggle (click)="useLanguage(  language )" *ngFor="let language of languages"
+                       [value]=language>{{ language.toUpperCase() }}</mat-button-toggle>
+  </mat-button-toggle-group>
+</span>
+</mat-toolbar>
+
+<app-translation-sample [fullName]="developerName"></app-translation-sample>
