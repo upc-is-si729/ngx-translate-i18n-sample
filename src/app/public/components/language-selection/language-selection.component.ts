@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -9,6 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class LanguageSelectionComponent {
   currentLang = 'en';
   languages = ['en', 'es'];
+
   constructor(private translate: TranslateService) {
     this.currentLang = translate.currentLang;
   }
